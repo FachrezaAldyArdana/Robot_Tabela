@@ -88,5 +88,3 @@ Sistem beroperasi menggunakan logika kendali berbasis mesin status (*Finite Stat
 - Volume genangan air sawah berada pada kedalaman minimal yang aman untuk pergerakan roda sasis robot.
 - Fokus utama prototipe adalah validasi konsep fungsional kendali servo dan pemantauan level benih berbasis IoT.
 
-
--
