@@ -52,35 +52,30 @@ Sistem beroperasi menggunakan logika kendali berbasis mesin status (*Finite Stat
 | **Servo Penabur Benih**| Signal | **GPIO 12** | Kendali Bukaan Sudut Katup |
 
 ---
-
-## 📊 Hasil Pengujian Sistem
-
 ### 1. Pengujian Mekanisme Penebaran Benih (Interval Jarak)
-*Ambang buka katup diatur pada setiap kelipatan $20\text{ cm}$:*
+*Ambang buka katup diatur pada setiap kelipatan 20 cm:*
 
 | Jarak Tempuh | Sudut Servo | Kondisi Katup | Status Siklus |
 | :---: | :---: | :---: | :--- |
-| **$0\text{ cm}$** | $100^\circ$ | Tertutup | Siap jalan |
-| **$10\text{ cm}$** | $100^\circ$ | Tertutup | Bergerak maju |
-| **$20\text{ cm}$** | **$63^\circ$** | **Terbuka** | Penebaran benih titik ke-1 |
-| **$30\text{ cm}$** | $100^\circ$ | Tertutup | Bergerak maju |
-| **$40\text{ cm}$** | **$63^\circ$** | **Terbuka** | Penebaran benih titik ke-2 |
-| **$60\text{ cm}$** | **$63^\circ$** | **Terbuka** | Penebaran benih titik ke-3 |
-| **$80\text{ cm}$** | **$63^\circ$** | **Terbuka** | Penebaran benih titik ke-4 |
-| **$100\text{ cm}$**| **$63^\circ$** | **Terbuka** | Penebaran benih titik ke-5 |
+| **0 cm** | 100° | Tertutup | Siap jalan |
+| **10 cm** | 100° | Tertutup | Bergerak maju |
+| **20 cm** | **63°** | **Terbuka** | Penebaran benih titik ke-1 |
+| **30 cm** | 100° | Tertutup | Bergerak maju |
+| **40 cm** | **63°** | **Terbuka** | Penebaran benih titik ke-2 |
+| **60 cm** | **63°** | **Terbuka** | Penebaran benih titik ke-3 |
+| **80 cm** | **63°** | **Terbuka** | Penebaran benih titik ke-4 |
+| **100 cm**| **63°** | **Terbuka** | Penebaran benih titik ke-5 |
 
-### 2. Akurasi Pembacaan Level Benih (*Seed Box*)
-*Kalibrasi wadah benih: Kosong ($9\text{ cm}$) – Penuh ($3\text{ cm}$):*
+### 2. Akurasi Pembacaan Level Benih (Seed Box)
+*Kalibrasi wadah benih: Kosong (9 cm) – Penuh (3 cm):*
 
 | Level Wadah (%) | Jarak Aktual (cm) | Pembacaan Sensor (cm) | Selisih Error (cm) |
 | :---: | :---: | :---: | :---: |
-| **$0\%$** | $9{,}0$ | $8{,}9$ | $0{,}1$ |
-| **$25\%$** | $7{,}5$ | $7{,}0$ | $0{,}5$ |
-| **$50\%$** | $6{,}0$ | $5{,}3$ | $0{,}7$ |
-| **$75\%$** | $4{,}5$ | $4{,}0$ | $0{,}5$ |
-| **$100\%$** | $3{,}0$ | $3{,}0$ | **$0{,}0$** |
-
----
+| **0%** | 9,0 | 8,9 | 0,1 |
+| **25%** | 7,5 | 7,0 | 0,5 |
+| **50%** | 6,0 | 5,3 | 0,7 |
+| **75%** | 4,5 | 4,0 | 0,5 |
+| **100%** | 3,0 | 3,0 | **0,0** |
 
 ## ⚠️ Batasan Masalah & Asumsi Kerja
 
